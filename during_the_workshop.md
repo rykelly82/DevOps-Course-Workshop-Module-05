@@ -296,6 +296,22 @@ volumes:
   TODO: COMPLETE THIS
 ```
 
+> :warning: **M1 Mac users** If you needed to pass a platform argument in your build command, you'll need a similar command in your compose file.
+
+<details><summary>Expand to see an example of specifying the platform </summary>
+
+```yaml
+services:
+  cliapp:
+    TODO: COMPLETE THIS
+    platform: linux/amd64
+  webapp:
+    TODO: COMPLETE THIS
+    platform: linux/amd64
+```
+
+</details>
+
 ## Part 6: Redis
 
 In this part of the workshop we will demonstrate how easy it is to add new functionality using containers. Chimera can be configured to use [Redis](https://redis.io/topics/introduction), an in-memory data store, as an alternative to the data folder in the shared volume. (Redis is more sophisticated than a basic file system; we might want to use it as a remote cache, or take advantage of its message brokering features. You don't need to understand the features of Redis for the purposes of this exercise, but do read about it if you're interested.)
